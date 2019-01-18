@@ -5,11 +5,11 @@ import java.util.List;
 public class Sandwich {
 
     private String mainName;
-    private List<String> alsoKnownAs = null;
+    private String alsoKnownAs = null;
     private String placeOfOrigin;
     private String description;
     private String image;
-    private List<String> ingredients = null;
+    private String ingredients = null;
 
     /**
      * No args constructor for use in serialization
@@ -17,7 +17,7 @@ public class Sandwich {
     public Sandwich() {
     }
 
-    public Sandwich(String mainName, List<String> alsoKnownAs, String placeOfOrigin, String description, String image, List<String> ingredients) {
+    public Sandwich(String mainName, String alsoKnownAs, String placeOfOrigin, String description, String image, String ingredients) {
         this.mainName = mainName;
         this.alsoKnownAs = alsoKnownAs;
         this.placeOfOrigin = placeOfOrigin;
@@ -34,11 +34,11 @@ public class Sandwich {
         this.mainName = mainName;
     }
 
-    public List<String> getAlsoKnownAs() {
+    public String getAlsoKnownAs() {
         return alsoKnownAs;
     }
 
-    public void setAlsoKnownAs(List<String> alsoKnownAs) {
+    public void setAlsoKnownAs(String alsoKnownAs) {
         this.alsoKnownAs = alsoKnownAs;
     }
 
@@ -66,11 +66,11 @@ public class Sandwich {
         this.image = image;
     }
 
-    public List<String> getIngredients() {
+    public String getIngredients() {
         return ingredients;
     }
 
-    public void setIngredients(List<String> ingredients) {
+    public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
     }
 }
